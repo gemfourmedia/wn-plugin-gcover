@@ -1,0 +1,4 @@
+<div class="cover-media-box" style="--aspect-ratio:{{item.params.media_width}}/{{item.params.media_height}};">
+	<video src="{{attribute(media, (media.type))|media}}" class="cover-media-item" autoplay nocontrols loop muted playsinline></video>
+	{% partial __SELF__~'::_content' text=text %}
+</div>

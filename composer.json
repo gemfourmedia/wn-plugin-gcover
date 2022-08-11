@@ -1,0 +1,26 @@
+{
+    "name": "gemfourmedia/wn-plugin-gcover",
+    "type": "winter-plugin",
+    "description": "Page cover management for Winter CMS",
+    "homepage": "https://github.com/gemfourmedia/wn-plugin-gcover",
+    "keywords": ["winter cms", "winter", "plugin", "cover"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sang Dang",
+            "email": "sangdang@gemfourmedia.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gemfourmedia/wn-plugin-gcover/issues",
+        "source": "https://github.com/gemfourmedia/wn-plugin-gcover"
+    },
+    "require": {
+        "php": "^7.2|^8.0",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "gcover"
+    }
+}

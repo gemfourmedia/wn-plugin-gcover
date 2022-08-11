@@ -1,0 +1,12 @@
+mediaItems:
+    label: Media Items
+    view:
+        list: $/gemfourmedia/gcover/models/media/columns.yaml
+        showSorting: false
+        defaultSort:
+            column: sort_order
+            direction: asc
+        toolbarButtons: create|remove
+    manage:
+        form: $/gemfourmedia/gcover/models/media/fields.yaml
+        recordsPerPage: 10

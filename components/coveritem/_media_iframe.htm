@@ -1,0 +1,4 @@
+<div class="cover-media-box" style="--aspect-ratio:{{item.params.media_width}}/{{item.params.media_height}};">
+	<iframe src="{{attribute(media, (media.type))}}" class="cover-media-item" ></iframe>
+	{% partial __SELF__~'::_content' text=text %}
+</div>

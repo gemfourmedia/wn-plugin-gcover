@@ -1,0 +1,7 @@
+1.0.1:
+    - 'Initialize plugin.'
+    - 'Created table gemfourmedia_cover_item'
+    - builder_table_create_gemfourmedia_cover_item.php
+    - 'Created table gemfourmedia_cover_media'
+    - builder_table_create_gemfourmedia_cover_media.php
+

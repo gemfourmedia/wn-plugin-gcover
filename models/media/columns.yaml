@@ -1,0 +1,26 @@
+columns:
+    id:
+        label: id
+        type: number
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    sort_order:
+        label: 'Sort Order'
+        type: number
+        sortable: true
+    type:
+        label: Type
+        type: text
+        sortable: true
+    created_at:
+        label: 'Created At'
+        type: timetense
+        invisible: true
+        sortable: true
+    updated_at:
+        label: 'Updated At'
+        type: timesince
+        sortable: true

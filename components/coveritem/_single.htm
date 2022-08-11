@@ -1,0 +1,3 @@
+{% set media = item.content[0] %}
+{% set text = (item.params.caption_mode == 'all') ? item.description : media.text %}
+{% partial __SELF__~'::_'~media.type media=media item=item text=text %}

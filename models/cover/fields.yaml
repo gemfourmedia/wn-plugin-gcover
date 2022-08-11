@@ -1,0 +1,92 @@
+fields:
+    published:
+        label: 'gemfourmedia.gcover::lang.item.fields.published'
+        span: full
+        default: 1
+        type: switch
+    title:
+        label: 'gemfourmedia.gcover::lang.item.fields.title'
+        span: auto
+        type: text
+    subtitle:
+        label: 'gemfourmedia.gcover::lang.item.fields.subtitle'
+        span: auto
+        type: text
+    desc:
+        label: 'gemfourmedia.gcover::lang.item.fields.desc'
+        size: ''
+        span: full
+        type: richeditor
+    page:
+        label: 'gemfourmedia.gcover::lang.item.fields.page'
+        showSearch: true
+        span: auto
+        type: dropdown
+tabs:
+    fields:
+        mediaItems:
+            label: 'Media Items'
+            span: full
+            type: partial
+            path: '$/gemfourmedia/gcover/models/cover/_field_relation_media.htm'
+            tab: 'Media Items'
+        mode:
+            label: 'gemfourmedia.gcover::lang.item.fields.mode'
+            options:
+                single: 'gemfourmedia.gcover::lang.item.fields.mode_single'
+                carousel: 'gemfourmedia.gcover::lang.item.fields.mode_carousel'
+                gallery: 'gemfourmedia.gcover::lang.item.fields.mode_gallery'
+            showSearch: true
+            span: left
+            type: dropdown
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[css_class]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.cssClass'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[media_width]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.media_width'
+            span: left
+            type: number
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[media_height]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.media_height'
+            span: auto
+            type: number
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        section_carousel:
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.section_carousel'
+            span: full
+            type: section
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[carousel][ride]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.carousel_ride'
+            span: left
+            type: switch
+            default: true
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[carousel][interval]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.carousel_interval'
+            span: left
+            type: number
+            default: 5000
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[carousel][indicators]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.carousel_indicators'
+            span: left
+            type: switch
+            default: false
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[carousel][controls]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.carousel_controls'
+            span: left
+            type: switch
+            default: false
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
+        'params[carousel][crossfade]':
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.carousel_crossfade'
+            span: left
+            type: switch
+            default: false
+            tab: 'gemfourmedia.gcover::lang.item.fields.params.label'

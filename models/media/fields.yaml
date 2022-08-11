@@ -1,0 +1,131 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    subtitle:
+        label: Subtitle
+        span: auto
+        type: text
+    desc:
+        label: Description
+        size: small
+        span: full
+        type: richeditor
+tabs:
+    fields:
+        type:
+            label: Type
+            options:
+                image: Image
+                video: Video
+                embed: 'Embed Code'
+            showSearch: true
+            span: auto
+            default: image
+            type: dropdown
+            tab: Item
+        image:
+            label: Image
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            trigger:
+                action: show
+                field: type
+                condition: 'value[image]'
+            imageWidth: '100'
+            imageHeight: '100'
+            type: fileupload
+            tab: Item
+        video:
+            label: Video
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            trigger:
+                action: show
+                field: type
+                condition: 'value[video]'
+            type: fileupload
+            tab: Item
+        embed:
+            label: 'Embed Code'
+            size: large
+            language: html
+            span: left
+            type: codeeditor
+            trigger:
+                action: show
+                field: type
+                condition: 'value[embed]'
+            tab: Item
+        'params[show_title]':
+            label: 'Show Title'
+            span: auto
+            type: switch
+            tab: Setting
+        'params[show_subtitle]':
+            label: 'Show Subtitle'
+            span: left
+            type: switch
+            tab: Setting
+        'params[show_desc]':
+            label: 'Show Description'
+            span: left
+            type: switch
+            tab: Setting
+        'params[invert]':
+            label: 'Invert Color?'
+            comment: 'Switch text color to dark/light'
+            span: left
+            type: switch
+            tab: Setting
+        'params[content_position]':
+            label: 'Content Position'
+            span: left
+            showSearch: true
+            options:
+                top_left: 'Top Left'
+                top_right: 'Top Right'
+                top_center: 'Top Center'
+                middle_left: 'Middle Left'
+                middle_right: 'Middle Right'
+                middle_center: 'Middle Center'
+                bottom_left: 'Bottom Left'
+                bottom_right: 'Bottom Right'
+                bottom_center: 'Bottom Center'
+            type: dropdown
+            tab: Setting
+        'params[enable_link]':
+            label: 'Enable Link'
+            span: left
+            type: switch
+            tab: Setting
+        'params[links]':
+            label: Links
+            prompt: 'Add new item'
+            style: default
+            span: left
+            trigger:
+                action: show
+                field: 'params[enable_link]'
+                condition: checked
+            type: repeater
+            tab: Setting
+            form:
+                fields:
+                    url:
+                        label: Url
+                        span: full
+                        type: text
+                    text:
+                        label: Text
+                        span: full
+                        type: text

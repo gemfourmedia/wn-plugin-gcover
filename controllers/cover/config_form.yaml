@@ -1,0 +1,10 @@
+name: Cover
+form: $/gemfourmedia/gcover/models/cover/fields.yaml
+modelClass: GemFourMedia\GCover\Models\Cover
+defaultRedirect: gemfourmedia/gcover/cover
+create:
+    redirect: 'gemfourmedia/gcover/cover/update/:id'
+    redirectClose: gemfourmedia/gcover/cover
+update:
+    redirect: gemfourmedia/gcover/cover
+    redirectClose: gemfourmedia/gcover/cover
