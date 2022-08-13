@@ -8,15 +8,6 @@ fields:
         label: 'gemfourmedia.gcover::lang.item.fields.title'
         span: auto
         type: text
-    subtitle:
-        label: 'gemfourmedia.gcover::lang.item.fields.subtitle'
-        span: auto
-        type: text
-    desc:
-        label: 'gemfourmedia.gcover::lang.item.fields.desc'
-        size: ''
-        span: full
-        type: richeditor
     page:
         label: 'gemfourmedia.gcover::lang.item.fields.page'
         showSearch: true
@@ -35,7 +26,6 @@ tabs:
             options:
                 single: 'gemfourmedia.gcover::lang.item.fields.mode_single'
                 carousel: 'gemfourmedia.gcover::lang.item.fields.mode_carousel'
-                gallery: 'gemfourmedia.gcover::lang.item.fields.mode_gallery'
             showSearch: true
             span: left
             type: dropdown
@@ -46,14 +36,16 @@ tabs:
             type: text
             tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
         'params[media_width]':
-            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.media_width'
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.container_width'
             span: left
             type: number
+            default: 1920
             tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
         'params[media_height]':
-            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.media_height'
+            label: 'gemfourmedia.gcover::lang.item.fields.params.fields.container_height'
             span: auto
             type: number
+            default: 760
             tab: 'gemfourmedia.gcover::lang.item.fields.params.label'
         section_carousel:
             label: 'gemfourmedia.gcover::lang.item.fields.params.fields.section_carousel'

@@ -1,19 +1,5 @@
 {% set item = __SELF__.item %}
 
 {% if item %}
-<div class="coverItem {{item.params.css_class}}" id="{{__SELF__}}" >
-	{% if item.params.enable_title or item.params.enable_subtitle %}
-	<div class="coverItem__header">
-		{% if item.title and item.params.enable_title %}
-			<h2 class="coverItem__title">{{item.title}}</h2>
-		{% endif %}
-		{% if item.subtitle and item.params.enable_subtitle %}
-			<p class="coverItem__subtitle">{{item.subtitle}}</p>
-		{% endif %}
-	</div>
-	{% endif %}
-	<div class="coverItem__body position-relative">
-		{% partial __SELF__~'::_'~item.mode item=item %}
-	</div>
-</div>
+    {% partial __SELF__~'::'~item.mode item=item setting=item.params %}
 {% endif %}

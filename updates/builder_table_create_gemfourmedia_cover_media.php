@@ -11,7 +11,7 @@ class BuilderTableCreateGemfourmediaCoverMedia extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
-            $table->integer('cover_id')->unsigned();
+            $table->integer('cover_id')->unsigned()->nullable();
             $table->string('title', 255)->nullable();
             $table->string('subtitle', 255)->nullable();
             $table->text('desc')->nullable();

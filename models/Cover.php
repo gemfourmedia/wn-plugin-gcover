@@ -79,6 +79,15 @@ class Cover extends Model
     }
 
     /**
+     * Accessors
+     */
+
+    public function getSingleMediaAttribute()
+    {
+        return optional($this->mediaItems)->first();
+    }
+
+    /**
      * Scopes
      */
     public function scopePublished($query)
